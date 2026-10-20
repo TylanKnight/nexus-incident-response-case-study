@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "scenario_date": "2026-10-20",
+  "clock_assumption": "All source clocks are synchronized; timestamps include offsets.",
+  "assets": {
+    "192.0.2.44": "VPN address assigned to S-104",
+    "192.0.2.60": "support-app",
+    "192.0.2.80": "public-gateway"
+  },
+  "approved_jobs": [
+    {
+      "job_id": "BACKUP-10",
+      "host": "support-app",
+      "scheduled_utc": "16:10",
+      "destination_ip": "203.0.113.10"
+    }
+  ],
+  "destination_review": {
+    "203.0.113.77": "Not listed in the provided approved destination register; not confirmed malicious."
+  },
+  "business_context": "Exports are permitted for support staff. The records do not include approval or a support ticket for export-017.json.",
+  "gaps": [
+    "No endpoint process telemetry",
+    "No outbound payload contents",
+    "No independent user confirmation",
+    "No historical sign-in baseline",
+    "No file-read or transfer trace linking export-017.json to N01"
+  ]
+}
