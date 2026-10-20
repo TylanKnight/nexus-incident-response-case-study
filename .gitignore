@@ -1,0 +1,10 @@
+# Keep private source material and local credentials out of this public case study.
+.env
+.env.*
+!.env.example
+private/
+original-submissions/
+grades/
+__pycache__/
+.DS_Store
+Thumbs.db
